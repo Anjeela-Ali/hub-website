@@ -39,7 +39,8 @@ function Header() {
   };
 
   return (
-    <AppBar position="static" sx={{ background: '#191c33', padding:'0px 20px' }}>
+    <AppBar position="static" sx={{ 
+      backgroundImage: 'linear-gradient(120deg, #353A5F 0%, #191C33 100%)', padding:'0px 20px' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
 
