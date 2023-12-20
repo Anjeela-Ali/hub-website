@@ -4,6 +4,11 @@ import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import { HiCursorClick } from "react-icons/hi";
 import { IoIosArrowForward } from "react-icons/io";
+import { BsFillAirplaneFill } from "react-icons/bs";
+import { MdFolderCopy } from "react-icons/md";
+import { HiMiniWrenchScrewdriver } from "react-icons/hi2";
+
+
 
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -12,6 +17,7 @@ const Item = styled(Paper)(({ theme }) => ({
     padding: theme.spacing(1),
     textAlign: 'center',
     borderRadius: '20px',
+    boxShadow:'none',
     color: theme.palette.text.secondary,
 }));
 
@@ -21,7 +27,8 @@ const ServicesSection = () => {
         <>
             <Box sx={{
                 backgroundImage: 'linear-gradient(180deg, #fff 47%, #F0EEFD 47%)',
-                textAlign: 'center'
+                textAlign: 'center',
+                padding:'70px 0px'
             }}>
                 {/* Heading */}
                 <Box >
@@ -57,7 +64,8 @@ const ServicesSection = () => {
                         <Grid item xs={5}>
                             <Item sx={{
                                 display: 'flex',
-                                padding:'30px'
+                                padding:'30px',
+                                marginBottom:'20px'
                             }}>
                                 <Box sx={{
                                     fontSize: '38px',
@@ -100,14 +108,16 @@ const ServicesSection = () => {
                         <Grid item xs={5}>
                         <Item sx={{
                                 display: 'flex',
-                                padding:'30px'
+                                padding:'30px',
+                                marginBottom:'20px'
                             }}>
                                 <Box sx={{
                                     fontSize: '38px',
                                     color: '#00cb99',
                                     padding: '0px 30px'
                                 }}>
-                                    <HiCursorClick />
+                                   <BsFillAirplaneFill />
+
 
                                 </Box>
                                 <Box sx={{
@@ -119,7 +129,51 @@ const ServicesSection = () => {
                                         color: '#225469',
                                         display:'flex'
                                     }}>
-                                        Interaction Design
+                                        Search Engine Optimization 
+
+                                        <Box sx={{
+                                            marginTop: '3px',
+                                            marginLeft: '5px'
+                                        }}>
+                                            <IoIosArrowForward />
+
+                                        </Box>
+                                    </Typography>
+                                    <Typography variant='body2' sx={{
+                                        color: '#737588',
+                                        fontSize: '18px',
+                                        paddingTop: '12px',
+                                    }}>
+                                        Produce the highest quality work and services for every client, on every project.
+                                    </Typography>
+                                </Box>
+                            </Item>
+                        </Grid>
+                        <Grid item xs={5}>
+                        <Item sx={{
+                                display: 'flex',
+                                padding:'30px',
+                                marginBottom:'20px'
+                            }}>
+                                <Box sx={{
+                                    fontSize: '38px',
+                                    color: '#00cb99',
+                                    padding: '0px 30px'
+                                }}>
+                                  <MdFolderCopy />
+
+
+                                </Box>
+                                <Box sx={{
+                                    textAlign: 'left'
+                                }}>
+                                    <Typography variant='h6' sx={{
+                                        fontWeight: '600',
+                                        fontSize: '20px',
+                                        color: '#225469',
+                                        display:'flex'
+                                    }}>
+                                        eCommerce Solutions 
 
                                         <Box sx={{
                                             marginTop: '3px',
@@ -142,14 +196,16 @@ const ServicesSection = () => {
                         <Grid item xs={5}>
                         <Item sx={{
                                 display: 'flex',
-                                padding:'30px'
+                                padding:'30px',
+                                marginBottom:'20px'
                             }}>
                                 <Box sx={{
                                     fontSize: '38px',
                                     color: '#00cb99',
                                     padding: '0px 30px'
                                 }}>
-                                    <HiCursorClick />
+                                    <HiMiniWrenchScrewdriver />
+
 
                                 </Box>
                                 <Box sx={{
@@ -161,49 +217,7 @@ const ServicesSection = () => {
                                         color: '#225469',
                                         display:'flex'
                                     }}>
-                                        Interaction Design
-
-                                        <Box sx={{
-                                            marginTop: '3px',
-                                            marginLeft: '5px'
-                                        }}>
-                                            <IoIosArrowForward />
-
-                                        </Box>
-                                    </Typography>
-                                    <Typography variant='body2' sx={{
-                                        color: '#737588',
-                                        fontSize: '18px',
-                                        paddingTop: '12px',
-                                    }}>
-                                        Produce the highest quality work and  <br /> services for every client, on every project.
-                                    </Typography>
-                                </Box>
-                            </Item>
-                        </Grid>
-                        <Grid item xs={5}>
-                        <Item sx={{
-                                display: 'flex',
-                                padding:'30px'
-                            }}>
-                                <Box sx={{
-                                    fontSize: '38px',
-                                    color: '#00cb99',
-                                    padding: '0px 30px'
-                                }}>
-                                    <HiCursorClick />
-
-                                </Box>
-                                <Box sx={{
-                                    textAlign: 'left'
-                                }}>
-                                    <Typography variant='h6' sx={{
-                                        fontWeight: '600',
-                                        fontSize: '20px',
-                                        color: '#225469',
-                                        display:'flex'
-                                    }}>
-                                        Interaction Design
+                                        Product Development 
 
                                         <Box sx={{
                                             marginTop: '3px',
