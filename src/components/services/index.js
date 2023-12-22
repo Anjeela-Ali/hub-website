@@ -12,13 +12,16 @@ import { HiMiniWrenchScrewdriver } from "react-icons/hi2";
 
 
 const Item = styled(Paper)(({ theme }) => ({
-    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
     ...theme.typography.body2,
-    padding: theme.spacing(1),
+    padding: '20px 30px',
     textAlign: 'center',
     borderRadius: '20px',
-    boxShadow:'none',
+    boxShadow: 'none',
     color: theme.palette.text.secondary,
+    '& : hover': {
+        backgroundColor: '#1a4265',
+        color: '#fff'
+    }
 }));
 
 
@@ -28,7 +31,7 @@ const ServicesSection = () => {
             <Box sx={{
                 backgroundImage: 'linear-gradient(180deg, #fff 47%, #F0EEFD 47%)',
                 textAlign: 'center',
-                padding:'70px 0px'
+                padding: '70px 0px'
             }}>
                 {/* Heading */}
                 <Box >
@@ -61,16 +64,19 @@ const ServicesSection = () => {
                     <Grid container rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3 }} sx={{
                         justifyContent: 'center'
                     }}>
-                        <Grid item xs={5}>
+                        <Grid item xs={5} sx={{
+                            transition: '0.3s',
+
+                        }}>
                             <Item sx={{
                                 display: 'flex',
-                                padding:'30px',
-                                marginBottom:'20px'
+                                marginBottom: '20px',
                             }}>
                                 <Box sx={{
                                     fontSize: '38px',
                                     color: '#00cb99',
-                                    padding: '0px 30px'
+                                    padding: '0px 30px',
+
                                 }}>
                                     <HiCursorClick />
 
@@ -82,13 +88,14 @@ const ServicesSection = () => {
                                         fontWeight: '600',
                                         fontSize: '20px',
                                         color: '#225469',
-                                        display:'flex'
+                                        display: 'flex'
                                     }}>
                                         Interaction Design
 
                                         <Box sx={{
                                             marginTop: '3px',
-                                            marginLeft: '5px'
+                                            marginLeft: '5px',
+                                            color: '#fff'
                                         }}>
                                             <IoIosArrowForward />
 
@@ -106,17 +113,16 @@ const ServicesSection = () => {
 
                         </Grid>
                         <Grid item xs={5}>
-                        <Item sx={{
+                            <Item sx={{
                                 display: 'flex',
-                                padding:'30px',
-                                marginBottom:'20px'
+                                marginBottom: '20px'
                             }}>
                                 <Box sx={{
                                     fontSize: '38px',
                                     color: '#00cb99',
                                     padding: '0px 30px'
                                 }}>
-                                   <BsFillAirplaneFill />
+                                    <BsFillAirplaneFill />
 
 
                                 </Box>
@@ -127,13 +133,14 @@ const ServicesSection = () => {
                                         fontWeight: '600',
                                         fontSize: '20px',
                                         color: '#225469',
-                                        display:'flex'
+                                        display: 'flex'
                                     }}>
-                                        Search Engine Optimization 
+                                        Search Engine Optimization
 
                                         <Box sx={{
                                             marginTop: '3px',
-                                            marginLeft: '5px'
+                                            marginLeft: '5px',
+                                            color: '#fff'
                                         }}>
                                             <IoIosArrowForward />
 
@@ -150,17 +157,16 @@ const ServicesSection = () => {
                             </Item>
                         </Grid>
                         <Grid item xs={5}>
-                        <Item sx={{
+                            <Item sx={{
                                 display: 'flex',
-                                padding:'30px',
-                                marginBottom:'20px'
+                                marginBottom: '20px'
                             }}>
                                 <Box sx={{
                                     fontSize: '38px',
                                     color: '#00cb99',
                                     padding: '0px 30px'
                                 }}>
-                                  <MdFolderCopy />
+                                    <MdFolderCopy />
 
 
                                 </Box>
@@ -171,13 +177,14 @@ const ServicesSection = () => {
                                         fontWeight: '600',
                                         fontSize: '20px',
                                         color: '#225469',
-                                        display:'flex'
+                                        display: 'flex'
                                     }}>
-                                        eCommerce Solutions 
+                                        eCommerce Solutions
 
                                         <Box sx={{
                                             marginTop: '3px',
-                                            marginLeft: '5px'
+                                            marginLeft: '5px',
+                                            color: '#fff'
                                         }}>
                                             <IoIosArrowForward />
 
@@ -194,10 +201,9 @@ const ServicesSection = () => {
                             </Item>
                         </Grid>
                         <Grid item xs={5}>
-                        <Item sx={{
+                            <Item sx={{
                                 display: 'flex',
-                                padding:'30px',
-                                marginBottom:'20px'
+                                marginBottom: '20px'
                             }}>
                                 <Box sx={{
                                     fontSize: '38px',
@@ -215,13 +221,14 @@ const ServicesSection = () => {
                                         fontWeight: '600',
                                         fontSize: '20px',
                                         color: '#225469',
-                                        display:'flex'
+                                        display: 'flex'
                                     }}>
-                                        Product Development 
+                                        Product Development
 
                                         <Box sx={{
                                             marginTop: '3px',
-                                            marginLeft: '5px'
+                                            marginLeft: '5px',
+                                            color: '#fff'
                                         }}>
                                             <IoIosArrowForward />
 

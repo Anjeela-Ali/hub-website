@@ -5,6 +5,8 @@ import TrustedFeatures from '../components/companies';
 import FeaturesSection from '../components/features';
 import SocialMarket from '../components/socialmarket';
 import ServicesSection from '../components/services';
+import CaseStudy from '../components/casestudy';
+import DetailedSection from '../components/detail';
 
 const HomePage = () => {
   return (
@@ -16,6 +18,8 @@ const HomePage = () => {
     <FeaturesSection />
     <SocialMarket />
     <ServicesSection />
+    <CaseStudy />
+    <DetailedSection />
       
     </>
   )
