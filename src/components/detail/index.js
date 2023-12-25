@@ -5,7 +5,7 @@ const DetailedSection = () => {
     return (
         <>
             <Box sx={{
-                position: 'relative'
+                position: 'relative',
             }}>
                 <Box>
                     <Typography variant='h2' sx={{
@@ -22,8 +22,7 @@ const DetailedSection = () => {
                 <Box sx={{
                     display: 'flex',
                     justifyContent: 'space-around',
-                    position: 'absolute',
-                    top: '150px'
+                    marginTop:'-120px'
                 }}>
                     <Box sx={{
                         width: "45%",
