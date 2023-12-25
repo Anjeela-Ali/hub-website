@@ -1,5 +1,5 @@
-import { Box, Typography } from '@mui/material'
-import FeaturesImgUrl from '../../assets/features_two.png'
+import { Box, Button, Typography } from '@mui/material'
+import ImgUrl from '../../assets/contact_img.png'
 
 const DetailedSection = () => {
     return (
@@ -23,23 +23,51 @@ const DetailedSection = () => {
                     display:'flex',
                     justifyContent:'space-around',
                     position:'absolute',
-                    border:'1px solid blue'
+                    top:'150px'
                 }}>
                     <Box sx={{
                         width:"45%",
-                        border:'1px solid red'
                     }}>
-                        <Typography  variant='h4'>
-                        We have three projects with this template and that is because we love the design, <Typography variant='para'>  the large number of possibilities.</Typography>
+                        <Typography  variant='h4' sx={{
+                            fontSize:'22px',
+                            fontWeight:'600',
+                            paddingTop:'225px',
+                            color:'#0e3f58'
+                        }}>
+                        We have three projects with this template and that is because we love the design, <Typography variant='para' sx={{
+                            color:'#737588'
+                        }}>  the large number of possibilities.</Typography>
                         </Typography>
 
                     </Box>
                     <Box sx={{
                         width:'45%',
-                        border:'1px solid red ',
                         textAlign:'center'
                     }}>
-                            <img src={FeaturesImgUrl} alt='screenshot'/>
+                            <img src={ImgUrl} alt='screenshot' width='55%'/>
+                            <Box sx={{
+                                position:'absolute',
+                                bottom:'20px',
+                                width:'40%',
+                                padding:'30px 30px',
+                                textAlign:'left',
+                                background:'radial-gradient(107.32% 141.42% at 0% 0%, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%)',
+                                                             backdropFilter:'blur(21px)'
+
+                            }}>
+                                <Typography variant='h5' sx={{
+                                         fontSize:'25px',
+                                         fontWeight:'600',
+                                }}>
+                                    Social Media Integration
+                                </Typography>
+                               <Button sx={{
+
+                               }}>
+                                Learn More 
+                               </Button>
+                            </Box>
+
                     </Box>
                 </Box>
 
