@@ -10,6 +10,7 @@ import DetailedSection from '../components/detail';
 import AboutSection from '../components/about';
 import Companies from '../components/companiesusinghub';
 import TestimonialsSection from '../components/testimonials';
+import LatestPosts from '../components/blogs';
 
 const HomePage = () => {
   return (
@@ -26,6 +27,7 @@ const HomePage = () => {
     <AboutSection />
     <Companies />
     <TestimonialsSection />
+    <LatestPosts />
       
     </>
   )
