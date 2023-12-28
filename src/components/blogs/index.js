@@ -4,6 +4,7 @@ import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import { Typography } from '@mui/material';
 import BlogCards from './cards';
+import { Link } from '@mui/material';
 
 
 
@@ -69,9 +70,34 @@ const LatestPosts = () => {
                         display:'flex',
                         justifyContent:'space-between'
                     }}>                                                
-                                <BlogCards />
+                      <BlogCards />
                     </Box>
-
+                    <Box sx={{
+                        textAlign:'center'
+                    }}>
+                        <Typography variant='body' sx={{
+                            color:'#504c74'
+                        }}>
+                            <Typography variant='para' sx={{
+                                    borderRadius: '40px',
+                                    padding: '6px 15px',
+                                    color: '#7a25ff',
+                                    backgroundColor: '#7a25ff1c',
+                                    fontSize: '15px',
+                                    fontWeight: '700',
+                                    margin:'0px 20px'
+                                }}>
+                                Contact
+                            </Typography>
+                            Looking for a corporate solution?
+                            <Link sx={{
+                                color: '#7a25ff',
+                                marginLeft:'5px'
+                            }}>
+                            Contact Us
+                            </Link>
+                        </Typography>
+                    </Box>
             </Box>
         </>
     )
