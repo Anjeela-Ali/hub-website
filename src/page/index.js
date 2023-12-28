@@ -9,6 +9,7 @@ import CaseStudy from '../components/casestudy';
 import DetailedSection from '../components/detail';
 import AboutSection from '../components/about';
 import Companies from '../components/companiesusinghub';
+import TestimonialsSection from '../components/testimonials';
 
 const HomePage = () => {
   return (
@@ -24,6 +25,7 @@ const HomePage = () => {
     <DetailedSection />
     <AboutSection />
     <Companies />
+    <TestimonialsSection />
       
     </>
   )
