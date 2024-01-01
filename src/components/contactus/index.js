@@ -5,18 +5,18 @@ const ContactUsSection = () => {
     return (
         <>
             <Box sx={{
-                position:'relative',
-                margin:'80px 0px'
+                position: 'relative',
+                margin: '80px 0px'
             }}>
                 <Box >
                     <img src={BgImgUrl} />
                 </Box>
                 <Box sx={{
                     textAlign: 'center',
-                    position:'absolute',
-                    left:'0px',
-                    right:'0px',
-                    top:'12px'
+                    position: 'absolute',
+                    left: '0px',
+                    right: '0px',
+                    top: '12px'
                 }}>
                     <Typography variant='h3' sx={{
                         color: '#45485f',
@@ -47,6 +47,59 @@ const ContactUsSection = () => {
                     }}>
                         Send a message
                     </Button>
+                </Box>
+
+                <Box sx={{
+                    border: '1px solid red',
+                    padding: '20px'
+                }}>
+
+                    <Box sx={{
+                        border: '1px  solid red ',
+                        width: '40%',
+                        margin: '20px auto',
+                        display: 'flex',
+                        justifyContent: 'space-evenly',
+                    }}>
+
+                        <Typography variant='h6' sx={{
+                            borderRight: '1px  solid red',
+                            paddingTop: '30px',
+                            paddingBottom: '30px',
+                            paddingRight: '50px',
+                            fontSize: '17px',
+                            color: '#737588',
+                            fontWeight: '500'
+                        }}>
+                            Project Offers
+                            <Typography variant='h6' sx={{
+                                fontSize: '22px',
+                                fontWeight: '600',
+                                color: '#04014c'
+                            }}>
+                                info.liquid.com
+                            </Typography>
+                        </Typography>
+
+                        <Typography variant='h6' sx={{
+                            paddingTop: '30px',
+                            paddingBottom: '30px',
+                            paddingRight: '20px',
+                            fontSize: '17px',
+                            color: '#737588',
+                            fontWeight: '500'
+                        }}>
+                            Consultation
+                            <Typography variant='h6' sx={{
+                                fontSize: '22px',
+                                fontWeight: '600',
+                                color: '#04014c'
+                            }}>
+                                + 1 223 38 87
+                            </Typography>
+                        </Typography>
+                    </Box>
+
                 </Box>
             </Box>
 
