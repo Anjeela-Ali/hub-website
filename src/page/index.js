@@ -12,6 +12,7 @@ import Companies from '../components/companiesusinghub';
 import TestimonialsSection from '../components/testimonials';
 import LatestPosts from '../components/blogs';
 import ContactUsSection from '../components/contactus';
+import FooterSection from '../components/footer';
 
 const HomePage = () => {
   return (
@@ -30,6 +31,7 @@ const HomePage = () => {
     <TestimonialsSection />
     <LatestPosts />
     <ContactUsSection />
+    <FooterSection />
       
     </>
   )
