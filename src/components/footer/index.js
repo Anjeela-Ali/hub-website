@@ -40,7 +40,7 @@ function FooterSection() {
     return (
         <>
             <Box sx={{
-                backgroundColor: '#E5DFFC',           
+                backgroundColor: '#E5DFFC',       
                 
                 
             }}>
@@ -140,9 +140,10 @@ function FooterSection() {
                 {/* Content */}
                 <Box sx={{
                     width:'80%',
-                    margin:'20px auto',
+                    margin:'0px auto',
                     display:'flex',
-                    justifyContent:'space-between'
+                    justifyContent:'space-between',
+                    padding:'40px 0px'
                 }}>
                     <Box >
                         <Typography variant='h6' sx={{
@@ -162,6 +163,9 @@ function FooterSection() {
 
                     }}>
                     <IoLogoInstagram />
+                    <Typography variant='para' sx={{
+                        padding:'0px 10px'
+                    }}></Typography>
                     <FaTwitter />
 
                     </Box>
