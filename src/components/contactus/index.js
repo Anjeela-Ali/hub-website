@@ -1,12 +1,13 @@
 import { Box, Button, Typography } from '@mui/material'
 import BgImgUrl from '../../assets/contact.png'
+import ImgUrl from '../../assets/footer.png'
 
 const ContactUsSection = () => {
     return (
         <>
             <Box sx={{
                 position: 'relative',
-                margin: '80px 0px'
+                margin: '80px 0px',
             }}>
                 <Box >
                     <img src={BgImgUrl} />
@@ -50,20 +51,22 @@ const ContactUsSection = () => {
                 </Box>
 
                 <Box sx={{
-                    border: '1px solid red',
-                    padding: '20px'
+                    backgroundImage:'linear-gradient(180deg, #E5DFFC 0%, #fff 100%)',
+                    padding: '20px',
+                    position:'relative',
+                    height:'300px'
                 }}>
 
                     <Box sx={{
-                        border: '1px  solid red ',
                         width: '40%',
                         margin: '20px auto',
                         display: 'flex',
                         justifyContent: 'space-evenly',
+                        backgroundColor:'white'
                     }}>
 
                         <Typography variant='h6' sx={{
-                            borderRight: '1px  solid red',
+                            borderRight: '1px  solid #0000001a',
                             paddingTop: '30px',
                             paddingBottom: '30px',
                             paddingRight: '50px',
@@ -98,6 +101,14 @@ const ContactUsSection = () => {
                                 + 1 223 38 87
                             </Typography>
                         </Typography>
+                    </Box>
+                    <Box sx={{
+                        position:'absolute',
+                        // left:'0px',
+                        right:'-68px',
+                        top:'-20px'
+                    }}>
+                        <img src={ImgUrl} alt='screenshot' width='60%' />
                     </Box>
 
                 </Box>
