@@ -64,7 +64,7 @@ const ServicesSection = () => {
                     <Grid container rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3 }} sx={{
                         justifyContent: 'center'
                     }}>
-                        <Grid item xs={5} sx={{
+                        <Grid item xs={6} sm={8} md={8} lg={5} xl={5} sx={{
                             transition: '0.3s',
 
                         }}>
@@ -112,7 +112,7 @@ const ServicesSection = () => {
                             </Item>
 
                         </Grid>
-                        <Grid item xs={5}>
+                        <Grid item xs={6} sm={8} md={8} lg={5} xl={5} >
                             <Item sx={{
                                 display: 'flex',
                                 marginBottom: '20px'
@@ -156,7 +156,7 @@ const ServicesSection = () => {
                                 </Box>
                             </Item>
                         </Grid>
-                        <Grid item xs={5}>
+                        <Grid item xs={6} sm={8} md={8} lg={5} xl={5}>
                             <Item sx={{
                                 display: 'flex',
                                 marginBottom: '20px'
@@ -200,7 +200,7 @@ const ServicesSection = () => {
                                 </Box>
                             </Item>
                         </Grid>
-                        <Grid item xs={5}>
+                        <Grid item xs={6} sm={8} md={8} lg={5} xl={5}>
                             <Item sx={{
                                 display: 'flex',
                                 marginBottom: '20px'
