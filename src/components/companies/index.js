@@ -16,27 +16,28 @@ const TrustedFeatures = () => {
                 padding: '40px 0'
             }}>
                 <Box sx={{
-                    width:'70%',
-                    margin:'0px auto',
-                    textAlign:'center'
+                    width: '80%',
+                    margin: '0px auto',
+                    textAlign: 'center',
                 }}>
-                    <Grid container columns={16}>
-                        <Grid item xs={3}>
-                            <img src={SpotifyImg} />
+                    <Grid container spacing={2} sx={{
+                        justifyContent:'center'
+                    }}>
+                        <Grid item xs={12} sm={6} md={4} lg={2} xl={3}>
+                            <img src={SpotifyImg} alt="Spotify" />
                         </Grid>
-                        <Grid item xs={3}>
-                            <img src={NikeImg} />
+                        <Grid item xs={12} sm={6} md={4} lg={2} xl={3}>
+                            <img src={NikeImg} alt="Nike" />
                         </Grid>
-                        <Grid item xs={3}>
-                            <img src={AmdImg} />
+                        <Grid item xs={12} sm={6} md={4} lg={2} xl={3}>
+                            <img src={AmdImg} alt="AMD" />
                         </Grid>
-                        <Grid item xs={3}>
-                            <img src={ApperImg} />
+                        <Grid item xs={12} sm={6} md={4} lg={2} xl={3}>
+                            <img src={ApperImg} alt="Apper" />
                         </Grid>
-                        <Grid item xs={3}>
-                            <img src={LogiTechImg} />
+                        <Grid item xs={12} sm={6} md={4} lg={2} xl={3}>
+                            <img src={LogiTechImg} alt="LogiTech" />
                         </Grid>
-
                     </Grid>
                 </Box>
 

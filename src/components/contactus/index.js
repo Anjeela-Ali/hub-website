@@ -10,7 +10,7 @@ const ContactUsSection = () => {
                 margin: '80px 0px',
             }}>
                 <Box >
-                    <img src={BgImgUrl} />
+                    <img src={BgImgUrl} alt='screenshot' width='100%'/>
                 </Box>
                 <Box sx={{
                     textAlign: 'center',
@@ -102,14 +102,14 @@ const ContactUsSection = () => {
                             </Typography>
                         </Typography>
                     </Box>
-                    <Box sx={{
+                    {/* <Box sx={{
                         position:'absolute',
                         // left:'0px',
                         right:'-68px',
                         top:'-20px'
                     }}>
                         <img src={ImgUrl} alt='screenshot' width='60%' />
-                    </Box>
+                    </Box> */}
 
                 </Box>
             </Box>

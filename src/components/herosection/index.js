@@ -3,9 +3,7 @@ import React from 'react'
 import { LuTriangleRight } from "react-icons/lu";
 import { BsFillDiamondFill } from "react-icons/bs";
 import { FaCircle } from "react-icons/fa";
-import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
-import { styled } from '@mui/material/styles';
 import ImgOne from '../../assets/hero_img_one.png';
 import ImgTwo from '../../assets/hero_img_two.png';
 import ImgThree from '../../assets/hero_img_three.png';
@@ -16,12 +14,12 @@ import ImgFour from '../../assets/hero_img_four.png';
 const HeroSection = () => {
   const styles = {
     headlineContainer: {
-      fontSize: '75px',
+      fontSize: {xs:'45px',sm:'55px',md:'65px',lg:'75px',xl:'75px'},
       fontWeight: '900',
       color: 'white',
     },
     subHeadline: {
-      fontSize: '22px',
+      fontSize: {xs:'16px',sm:'18px',md:'20px',lg:'22px',xl:'22px'},
       fontWeight: '500',
       color: '#ffffff80'
     },
