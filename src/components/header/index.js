@@ -9,15 +9,13 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import LogoImgUrl from '../../assets/logo.svg'
-import { FaTwitter } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import { IoIosArrowDown } from "react-icons/io";
+import LogoImgUrl from '../../assets/logo.svg';
+import { FaTwitter, FaLinkedinIn, FaGithub } from 'react-icons/fa';
+import { IoIosArrowDown } from 'react-icons/io';
+import Hidden from '@mui/material/Hidden';
 
-
-const pages = ['Home ', 'About', 'Services', 'Customer Stories', 'Contact'];
-const settings = ['Home ', 'About', 'Services', 'Customer Stories', 'Contact'];
+const pages = ['Home', 'About', 'Services', 'Customer Stories', 'Contact'];
+const settings = ['Home', 'About', 'Services', 'Customer Stories', 'Contact'];
 
 function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -26,6 +24,7 @@ function Header() {
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
+
   const handleOpenUserMenu = (event) => {
     setAnchorElUser(event.currentTarget);
   };
@@ -39,11 +38,9 @@ function Header() {
   };
 
   return (
-    <AppBar position="static" sx={{ 
-      backgroundImage: 'linear-gradient(120deg, #353A5F 0%, #191C33 100%)', padding:'0px 20px' }}>
+    <AppBar position="static" sx={{ backgroundImage: 'linear-gradient(120deg, #353A5F 0%, #191C33 100%)', padding: '0px 20px' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
@@ -75,119 +72,196 @@ function Header() {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center" textTransform="capitalize">{page}</Typography>
+                  <Typography textAlign="center" textTransform="capitalize">
+                    {page}
+                  </Typography>
                 </MenuItem>
               ))}
+              {/* Add the responsive buttons and icons here */}
+              <MenuItem>
+                <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                  {/* Add your buttons and icons here */}
+                  <Box sx={{ marginBottom: 2 }}>
+                    <Button
+                      sx={{
+                        color: 'white',
+                        textTransform: 'capitalize',
+                        fontSize: '16px',
+                      }}
+                    >
+                      Send a message
+                    </Button>
+                  </Box>
+                  <Box sx={{ display: 'flex', color: '#45485f' }}>
+                    <Box
+                      sx={{
+                        fontSize: '18px',
+                        marginRight: '12px',
+                        cursor: 'pointer',
+                        ':hover': {
+                          color: 'white',
+                        },
+                      }}
+                    >
+                      <FaTwitter />
+                    </Box>
+                    <Box
+                      sx={{
+                        fontSize: '18px',
+                        marginRight: '12px',
+                        cursor: 'pointer',
+                        ':hover': {
+                          color: 'white',
+                        },
+                      }}
+                    >
+                      <FaLinkedinIn />
+                    </Box>
+                    <Box
+                      sx={{
+                        fontSize: '18px',
+                        marginRight: '12px',
+                        cursor: 'pointer',
+                        ':hover': {
+                          color: 'white',
+                        },
+                      }}
+                    >
+                      <FaGithub />
+                    </Box>
+                  </Box>
+                </Box>
+              </MenuItem>
             </Menu>
           </Box>
           <Box>
-
-            {/* test  */}
+            {/* test */}
             <a>
-            <img src={LogoImgUrl} alt='screenshot' width='100%' />
+              <img src={LogoImgUrl} alt="screenshot" width="100%" />
             </a>
-           
           </Box>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex'},justifyContent: 'center',}}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'center' }}>
             {pages.map((page) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'flex',  textTransform: 'capitalize', fontSize:'16px', margin: '0px 18px'  }}
+                sx={{ my: 2, color: 'white', display: 'flex', textTransform: 'capitalize', fontSize: '16px', margin: '0px 18px' }}
               >
                 {page}
-                <Box sx={{
-                  marginTop:'9px',
-                  marginLeft:'9px'
-                }}>
-                <IoIosArrowDown />
+                <Box
+                  sx={{
+                    marginTop: '9px',
+                    marginLeft: '9px',
+                  }}
+                >
+                  <IoIosArrowDown />
                 </Box>
-                
               </Button>
             ))}
           </Box>
-
-          <Box sx={{ flexGrow: 0 }}>
+          <Hidden mdDown>
+            {/* Display these buttons and icons only on medium and larger screens */}
             <Box sx={{ display: 'flex' }}>
-              <Box sx={{ marginRight: '20px', display: 'flex', marginTop:'13px', color:'#45485f' }}>
-
-                <Box sx={{
-                  fontSize:'18px',
-                  marginRight: '12px',
-                  cursor:'pointer',
-                  ":hover":{
-                    color:'white'
-                  }
-                }}>
+              <Box sx={{ marginRight: '20px', display: 'flex', marginTop: '13px', color: '#45485f' }}>
+                <Box
+                  sx={{
+                    fontSize: '18px',
+                    marginRight: '12px',
+                    cursor: 'pointer',
+                    ':hover': {
+                      color: 'white',
+                    },
+                  }}
+                >
                   <FaTwitter />
                 </Box>
-                <Box sx={{
-                  fontSize:'18px',
-                  marginRight: '12px',
-                  cursor:'pointer',
-                  ":hover":{
-                    color:'white'
-                  }
-                }}>
+                <Box
+                  sx={{
+                    fontSize: '18px',
+                    marginRight: '12px',
+                    cursor: 'pointer',
+                    ':hover': {
+                      color: 'white',
+                    },
+                  }}
+                >
                   <FaLinkedinIn />
                 </Box>
-                <Box sx={{
-                  fontSize:'18px',
-                  marginRight: '12px',
-                  cursor:'pointer',
-                  ":hover":{
-                    color:'white'
-                  }
-                }}>
+                <Box
+                  sx={{
+                    fontSize: '18px',
+                    marginRight: '12px',
+                    cursor: 'pointer',
+                    ':hover': {
+                      color: 'white',
+                    },
+                  }}
+                >
                   <FaGithub />
                 </Box>
-
-
               </Box>
               <Box>
-                <Button sx={{
-                  borderRadius:'50px',
-                  background:'#45485f',
-                  textTransform:'lowercase',
-                  color:'white',
-                  padding:'9px 15px',
-                  fontSize:'15px',
-                  fontWeight:'600',
-                  ":hover":{
-                    background:'white',
-                    color:'black'
-                  }
-                }}>
+                <Button
+                  sx={{
+                    borderRadius: '50px',
+                    background: '#45485f',
+                    textTransform: 'lowercase',
+                    color: 'white',
+                    padding: '9px 15px',
+                    fontSize: '15px',
+                    fontWeight: '600',
+                    ':hover': {
+                      background: 'white',
+                      color: 'black',
+                    },
+                  }}
+                >
                   Send a message
                 </Button>
               </Box>
             </Box>
-            <Menu
-              sx={{ mt: '45px' }}
-              id="menu-appbar"
-              anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
-            >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
+          </Hidden>
+          <Box sx={{ flexGrow: 0 }}>
+            <Hidden mdDown>
+              {/* Display the menu icon only on medium and larger screens */}
+              <IconButton
+                size="large"
+                aria-label="account of current user"
+                aria-controls="menu-appbar"
+                aria-haspopup="true"
+                onClick={handleOpenUserMenu}
+                color="inherit"
+              >
+                <MenuIcon />
+              </IconButton>
+            </Hidden>
           </Box>
+          <Menu
+            sx={{ mt: '45px' }}
+            id="menu-appbar"
+            anchorEl={anchorElUser}
+            anchorOrigin={{
+              vertical: 'top',
+              horizontal: 'right',
+            }}
+            keepMounted
+            transformOrigin={{
+              vertical: 'top',
+              horizontal: 'right',
+            }}
+            open={Boolean(anchorElUser)}
+            onClose={handleCloseUserMenu}
+          >
+            {settings.map((setting) => (
+              <MenuItem key={setting} onClick={handleCloseUserMenu}>
+                <Typography textAlign="center">{setting}</Typography>
+              </MenuItem>
+            ))}
+          </Menu>
         </Toolbar>
       </Container>
     </AppBar>
   );
 }
+
 export default Header;
