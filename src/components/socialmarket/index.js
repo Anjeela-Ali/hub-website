@@ -13,7 +13,7 @@ const SocialMarket = () => {
                     marginBottom:'80px',
                     marginTop:'31px'
                 }}>
-                    <Grid item xs={5} >
+                    <Grid item xs={5} sm={8} md={6} lg={5} xl={5}>
                         <Box sx={{
                             textAlign:'right'
                         }}>
@@ -21,7 +21,7 @@ const SocialMarket = () => {
                         </Box>
                     </Grid>
                     {/* Content */}
-                    <Grid item xs={5} >
+                    <Grid item xs={5} sm={12} md={6} lg={5} xl={5} >
                         <Box sx={{
                             textAlign:'left',
                             marginTop:'30px',
