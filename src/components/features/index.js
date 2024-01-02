@@ -9,7 +9,7 @@ const FeaturesSection = () => {
 
     const styles = {
         headline: {
-            fontSize: '45px',
+            fontSize:{ xs:'35px',sm:'38px',md:'40px',lg:'45px',xl:'45px'},
             fontWeight: '600',
             color: '#225469'
         },
@@ -40,7 +40,7 @@ const FeaturesSection = () => {
                         Branding strategy and
                     </Typography>
                     <Typography variant='h2' sx={{
-                        fontSize: '45px',
+                        fontSize:{ xs:'35px',sm:'38px',md:'40px',lg:'45px',xl:'45px'},
                         fontWeight: '600',
                         background: 'linear-gradient(12deg,  #ff4d54 40%, #ed6a04 60%),linear-gradient(12deg, #ed6a04 40%,  #ff4d54 60%)',
                         WebkitBackgroundClip: 'text',
@@ -51,10 +51,11 @@ const FeaturesSection = () => {
                     </Typography>
 
                     <Typography variant='body2' sx={{
-                        fontSize: '17px',
+                        fontSize: {xs:'14px',sm:'15px',md:'16px',lg:'17px',xl:'17px'},
                         fontWeight: '600',
                         color: '#225469',
                         marginTop: '22px',
+                        padding:'4px 40px'
                     }}>
                         We have three projects with this template and that is because we love <br /> the design, <Typography variant='para' sx={{
                             fontWeight: '500',
@@ -64,14 +65,15 @@ const FeaturesSection = () => {
 
                 </Box>
                 <Box sx={{
-                    margin: '50px auto'
+                    margin: '50px auto',
                 }}>
 
                     <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }} sx={{
                         justifyContent: 'center',
                         textAlign: 'center'
                     }}>
-                        <Grid item xs={3} sx={{
+                        <Grid item xs={12} sm={6} md={4} lg={3} xl={4}
+                         sx={{
                             borderRight: '1px solid #cbcccf '
                         }}>
                             {/* Image */}
@@ -90,7 +92,7 @@ const FeaturesSection = () => {
                                 </Typography>
                             </Box>
                         </Grid>
-                        <Grid item xs={3} sx={{
+                        <Grid item xs={12} sm={6} md={4} lg={3} xl={4} sx={{
                             borderRight: '1px solid #cbcccf '
                         }}>
                             <Box sx={{
@@ -121,8 +123,9 @@ const FeaturesSection = () => {
                                     Content-focused grid designs, unique social elements, post-sharing function, author exposure, sticky newsletter.                                </Typography>
                             </Box>
                         </Grid>
-                        <Grid item xs={3} sx={{
-                            borderRight: '1px solid #cbcccf '
+                        <Grid item xs={12} sm={6} md={4} lg={3} xl={4}  sx={{
+                            borderRight: '1px solid #cbcccf ',
+                            // margin:'20px auto ',
                         }}>
                             <Box sx={{
                                 marginBottom: '60px'
