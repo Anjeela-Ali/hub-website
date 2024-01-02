@@ -104,7 +104,7 @@ const CaseStudy = () => {
         {/* Menu Items */}
         {/* Category Buttons */}
         <Box sx={{
-          display: 'flex',
+          display: {xs:'block',sm:'block',md:'block',lg:'flex',xl:'flex'},
           width: '90%',
           justifyContent:'space-between',
           margin: '10px auto',
@@ -120,7 +120,9 @@ const CaseStudy = () => {
           </Typography>
 
           <ButtonGroup sx={{
-            width:'50%'
+            width:{sm:'65%',md:'70%',lg:'50%',xl:'50%'},
+         
+            margin:'10px'
           }}>
             <Button onClick={() => handleCategoryChange('all')} sx={styles.buttons}>All <Typography style={{
               marginBottom: '13px',
@@ -149,7 +151,7 @@ const CaseStudy = () => {
             {
               width:'30%',
               textAlign:'right',
-              verticalAlign:'middle'
+              verticalAlign:'middle',
             }
           }>
             <Typography variant='para' sx={{
