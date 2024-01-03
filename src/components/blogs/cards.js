@@ -1,8 +1,5 @@
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
 import { Typography, Box } from '@mui/material';
 import BlogImgOne from '../../assets/blog_img_1.jpg';
 import BlogImgTwo from '../../assets/blog_img_2.jpg';
@@ -55,7 +52,7 @@ const BlogCards = () => {
                             height: '200px',
                             overflow: 'hidden'
                         }}>
-                            <img src={item.image} width='100%' />
+                            <img src={item.image} alt='screenshot' width='100%' />
 
                         </Box>
                         <CardContent>

@@ -1,6 +1,5 @@
 import { Box, Button, Typography } from '@mui/material'
 import BgImgUrl from '../../assets/contact.png'
-import ImgUrl from '../../assets/footer.png'
 
 const ContactUsSection = () => {
     return (
@@ -9,7 +8,9 @@ const ContactUsSection = () => {
                 position: 'relative',
                 margin: '80px 0px',
             }}>
-                <Box >
+                <Box sx={{
+                    height:'370px'
+                }}>
                     <img src={BgImgUrl} alt='screenshot' width='100%'/>
                 </Box>
                 <Box sx={{
@@ -17,7 +18,8 @@ const ContactUsSection = () => {
                     position: 'absolute',
                     left: '0px',
                     right: '0px',
-                    top: '12px'
+                    top: '12px',
+                    height:'300px'
                 }}>
                     <Typography variant='h3' sx={{
                         color: '#45485f',
@@ -44,7 +46,7 @@ const ContactUsSection = () => {
                         color: 'white',
                         borderRadius: '50px',
                         fontSize: '17px',
-                        margin: '30px auto'
+                        margin: '30px auto',
                     }}>
                         Send a message
                     </Button>
@@ -54,15 +56,15 @@ const ContactUsSection = () => {
                     backgroundImage:'linear-gradient(180deg, #E5DFFC 0%, #fff 100%)',
                     padding: '20px',
                     position:'relative',
-                    height:'300px'
                 }}>
 
                     <Box sx={{
-                        width: '40%',
+                        width:{xs:'70%',sm:'60%',md:'60%',lg:'60%', xl:'40%'},
                         margin: '20px auto',
-                        display: 'flex',
+                        display: {xs:'block',sm:'block',md:'flex',lg:'flex',xl:'flex'},
                         justifyContent: 'space-evenly',
-                        backgroundColor:'white'
+                        backgroundColor:'white',
+                        padding:'20px'
                     }}>
 
                         <Typography variant='h6' sx={{
