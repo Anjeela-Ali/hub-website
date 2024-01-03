@@ -24,6 +24,7 @@ const AboutSection = () => {
                         width: { xs: '70%', sm: '70%', md: '50%', lg: '40%', xl: '40%' },
                         height: '400px',
                         position: 'relative',
+                        textAlign:'center'
                     }}>
                         <Box sx={{
                             position: 'absolute',
