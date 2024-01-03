@@ -67,7 +67,7 @@ function Header() {
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: 'block', md: 'none' },
+                display: { xs: 'block', md: 'none',lg:'block'},
               }}
             >
               {pages.map((page) => (
@@ -140,7 +140,7 @@ function Header() {
               <img src={LogoImgUrl} alt="screenshot" width="100%" />
             </a>
           </Box>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'center' }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'none', lg:'flex' }, justifyContent: 'center' }}>
             {pages.map((page) => (
               <Button
                 key={page}
@@ -221,43 +221,7 @@ function Header() {
               </Box>
             </Box>
           </Hidden>
-          <Box sx={{ flexGrow: 0 }}>
-            <Hidden mdDown>
-              {/* Display the menu icon only on medium and larger screens */}
-              <IconButton
-                size="large"
-                aria-label="account of current user"
-                aria-controls="menu-appbar"
-                aria-haspopup="true"
-                onClick={handleOpenUserMenu}
-                color="inherit"
-              >
-                <MenuIcon />
-              </IconButton>
-            </Hidden>
-          </Box>
-          <Menu
-            sx={{ mt: '45px' }}
-            id="menu-appbar"
-            anchorEl={anchorElUser}
-            anchorOrigin={{
-              vertical: 'top',
-              horizontal: 'right',
-            }}
-            keepMounted
-            transformOrigin={{
-              vertical: 'top',
-              horizontal: 'right',
-            }}
-            open={Boolean(anchorElUser)}
-            onClose={handleCloseUserMenu}
-          >
-            {settings.map((setting) => (
-              <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                <Typography textAlign="center">{setting}</Typography>
-              </MenuItem>
-            ))}
-          </Menu>
+        
         </Toolbar>
       </Container>
     </AppBar>
