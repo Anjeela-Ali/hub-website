@@ -61,7 +61,7 @@ const AboutSection = () => {
                     </Box>
                     {/* Content Container */}
                     <Box sx={{
-                        width: { xs: '70%', sm: '90%', md: '90%', lg: '50%', xl: '50%' },
+                        width: { xs: '95%', sm: '90%', md: '90%', lg: '50%', xl: '50%' },
                         height: { xs: '650px', sm: '650px', md: '350px', lg: '350px', xl: '350px' },
                         display: { xs: 'block', sm: 'block', md: 'flex', lg: 'flex', xl: 'flex' },
                         boxShadow: '0 14px 55px 0 rgba(208,202,239,.3)',
@@ -70,7 +70,7 @@ const AboutSection = () => {
                     }}>
 
                         <Box sx={{
-                            width: { xs: '60%', sm: '75%', md: '30%', lg: '30%', xl: '30%' },
+                            width: { xs: '90%', sm: '75%', md: '30%', lg: '30%', xl: '30%' },
                             padding: '20px',
                             borderRight: { xs: 'none', sm: 'none', md: '1px solid #0000001a', lg: '1px solid #0000001a', xl: '1px solid #0000001a' },
                             borderBottom: { xs: '1px solid #0000001a', sm: '1px solid #0000001a', md: '1px solid #0000001a', lg: 'none', xl: 'none' },
@@ -104,7 +104,7 @@ const AboutSection = () => {
                             </Typography>
                         </Box>
                         <Box sx={{
-                            width: { xs: '60%', sm: '75%', md: '30%', lg: '30%', xl: '30%' },
+                            width: { xs: '95%', sm: '75%', md: '30%', lg: '30%', xl: '30%' },
                             padding: '20px',
                             borderRight: { xs: 'none', sm: 'none', md: '1px solid #0000001a', lg: '1px solid #0000001a', xl: '1px solid #0000001a' },
                             borderBottom: { xs: '1px solid #0000001a', sm: '1px solid #0000001a', md: '1px solid #0000001a', lg: 'none', xl: 'none' },
@@ -137,7 +137,7 @@ const AboutSection = () => {
                             </Typography>
                         </Box>
                         <Box sx={{
-                            width: { xs: '60%', sm: '75%', md: '30%', lg: '30%', xl: '30%' },
+                            width: { xs: '95%', sm: '75%', md: '30%', lg: '30%', xl: '30%' },
                             padding: '20px',
                             borderRight: { xs: 'none', sm: 'none', md: '1px solid #0000001a', lg: '1px solid #0000001a', xl: '1px solid #0000001a' },
                             borderBottom: { xs: '1px solid #0000001a', sm: '1px solid #0000001a', md: '1px solid #0000001a', lg: 'none', xl: 'none' },

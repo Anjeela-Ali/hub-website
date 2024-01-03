@@ -28,9 +28,10 @@ const Companies = () => {
             borderRadius:'10px',
             display:'flex',
             padding:'45px',
-            justifyContent:'space-around'
+            justifyContent:'space-between',
+            flexWrap:'wrap'
         }}>
-            <img  src={Spotify} alt='Screenshot'/>
+            <img  src={Spotify} alt='Screenshot' />
             <img  src={Nike} alt='Screenshot'/>
             <img  src={Amd} alt='Screenshot'/>
             <img  src={Apper} alt='Screenshot'/>
