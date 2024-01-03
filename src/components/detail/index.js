@@ -1,4 +1,4 @@
-import { Box, Button, Typography } from '@mui/material'
+import { Box, Button, Grid, Typography } from '@mui/material'
 import ImgUrl from '../../assets/contact_img.png'
 
 const DetailedSection = () => {
@@ -7,9 +7,11 @@ const DetailedSection = () => {
             <Box sx={{
                 position: 'relative',
             }}>
-                <Box>
+                <Box sx={{
+                    textAlign: 'center'
+                }}>
                     <Typography variant='h2' sx={{
-                        fontSize: '280px',
+                        fontSize: { xs: '120px', sm: '150px', md: '180px', lg: '240px', xl: '280px' },
                         fontWeight: '900',
                         padding: '30px auto',
                         color: '#d9dcff'
@@ -19,57 +21,55 @@ const DetailedSection = () => {
                 </Box>
 
                 {/* Second Container */}
-                <Box sx={{
-                    display: 'flex',
+                <Grid  container sx={{
                     justifyContent: 'space-around',
-                    marginTop:'-120px'
+                    marginTop: '-120px',                    
                 }}>
-                    <Box sx={{
-                        width: "45%",
+                    <Grid item xs={12} sm={7} md={5} lg={5} xl={3} sx={{
+                        border: '1px solid red',
+                        padding: '0px 30px',
                     }}>
                         <Typography variant='h4' sx={{
                             fontSize: '22px',
                             fontWeight: '600',
-                            paddingTop: '225px',
+                            // paddingTop: '225px',
                             color: '#0e3f58'
                         }}>
-                            We have three projects with this template and that is because we love the design, <Typography variant='para' sx={{
+                            We have three projects with this template and that is because we love the design,
+                            <Typography variant='para' sx={{
                                 color: '#737588'
-                            }}>  the large number of possibilities.</Typography>
+                            }}>
+                                the large number of possibilities.
+                            </Typography>
                         </Typography>
-
-                    </Box>
-                    <Box sx={{
-                        width: '45%',
-                        textAlign: 'center'
+                    </Grid>
+                    <Grid item xs={12} sm={7} md={5} lg={5} xl={3} sx={{
+                        textAlign: 'center',
+                        border: '1px solid red'
                     }}>
                         <img src={ImgUrl} alt='screenshot' width='55%' />
                         <Box sx={{
                             position: 'absolute',
                             bottom: '20px',
-                            width: '40%',
                             padding: '30px 30px',
                             textAlign: 'left',
                             background: 'radial-gradient(107.32% 141.42% at 0% 0%, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%)',
                             backdropFilter: 'blur(21px)'
-
                         }}>
                             <Typography variant='h5' sx={{
                                 fontSize: '25px',
                                 fontWeight: '600',
-                                color:'#0e3f58'
+                                color: '#0e3f58'
                             }}>
                                 Social Media Integration
                             </Typography>
-                            <Button sx={{
-
-                            }}>
+                            <Button sx={{}}>
                                 Learn More
                             </Button>
                         </Box>
+                    </Grid>
+                </Grid >
 
-                    </Box>
-                </Box>
 
             </Box>
 
