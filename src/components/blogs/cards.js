@@ -49,7 +49,7 @@ const BlogCards = () => {
 
             {
                 data.map((item) => (
-                    <Card sx={{ maxWidth: 330, boxShadow:'1px 1px 33px -16px grey' }}>
+                    <Card sx={{ maxWidth: 330, boxShadow:'1px 1px 33px -16px grey', marginBottom:'20px' }}>
 
                         <Box sx={{
                             height: '200px',

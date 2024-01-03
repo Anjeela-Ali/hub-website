@@ -24,7 +24,7 @@ const LatestPosts = () => {
             }}>
                 <Box sx={{ flexGrow: 1 }}>
                     <Grid container spacing={2}>
-                        <Grid item xs={6} md={6}>
+                        <Grid item xs={12} sm={12} md={6} lg={6} xl={6} >
                             <Item>
                                 <Typography variant='para' sx={{
                                     borderRadius: '40px',
@@ -48,7 +48,7 @@ const LatestPosts = () => {
                                 </Typography>
                             </Item>
                         </Grid>
-                        <Grid item xs={6} md={6}>
+                        <Grid item xs={12} sm={12} md={6} lg={6} xl={6} >
                             <Item>
                                 <Typography variant='body2' sx={{
                                     fontSize: '20px',
@@ -64,40 +64,41 @@ const LatestPosts = () => {
                     </Grid>
                 </Box>
 
-                <Box  sx={{
-                        margin: '30px 0px',
-                        padding: '20px 0px',
-                        display:'flex',
-                        justifyContent:'space-between'
-                    }}>                                                
-                      <BlogCards />
-                    </Box>
-                    <Box sx={{
-                        textAlign:'center'
+                <Box sx={{
+                    margin: '30px 0px',
+                    padding: '20px 0px',
+                    display: 'flex',
+                    flexWrap:'wrap',
+                    justifyContent: 'space-evenly'
+                }}>
+                    <BlogCards />
+                </Box>
+                <Box sx={{
+                    textAlign: 'center'
+                }}>
+                    <Typography variant='body' sx={{
+                        color: '#504c74'
                     }}>
-                        <Typography variant='body' sx={{
-                            color:'#504c74'
+                        <Typography variant='para' sx={{
+                            borderRadius: '40px',
+                            padding: '6px 15px',
+                            color: '#7a25ff',
+                            backgroundColor: '#7a25ff1c',
+                            fontSize: '15px',
+                            fontWeight: '700',
+                            margin: '0px 20px'
                         }}>
-                            <Typography variant='para' sx={{
-                                    borderRadius: '40px',
-                                    padding: '6px 15px',
-                                    color: '#7a25ff',
-                                    backgroundColor: '#7a25ff1c',
-                                    fontSize: '15px',
-                                    fontWeight: '700',
-                                    margin:'0px 20px'
-                                }}>
-                                Contact
-                            </Typography>
-                            Looking for a corporate solution?
-                            <Link sx={{
-                                color: '#7a25ff',
-                                marginLeft:'5px'
-                            }}>
-                            Contact Us
-                            </Link>
+                            Contact
                         </Typography>
-                    </Box>
+                        Looking for a corporate solution?
+                        <Link sx={{
+                            color: '#7a25ff',
+                            marginLeft: '5px'
+                        }}>
+                            Contact Us
+                        </Link>
+                    </Typography>
+                </Box>
             </Box>
         </>
     )
