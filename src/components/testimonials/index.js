@@ -11,14 +11,15 @@ const TestimonialsSection = () => {
                 padding:'60px 0px'
             }}>
                 <Box sx={{
-                    display: 'flex',
+                    display: {xs:'block',sm:'block',md:'block',lg:'flex',xl:'flex'},
                     justifyContent: 'space-evenly',
                     width:'85%',
-                    margin:'30px auto'
+                    margin:'30px auto',
+                    flexWrap:'wrap'
 
                 }}>
                     <Box sx={{
-                        width: '35%',
+                        width: {xs:'70%',sm:'60%',md:'50%',lg:'35%',xl:'35%'},
                     }}>
                         <Box sx={{
                             display: 'flex'
@@ -95,7 +96,7 @@ const TestimonialsSection = () => {
 
                     </Box>
                     <Box sx={{
-                        width: '60%',
+                        width: {xs:'100%',sm:'95%',md:'80%',lg:'60%',xl:'60%'},
                         boxShadow:'1px 1px 77px #e5e2e2',
                         borderRadius:'30px',
                         overflow:'hidden'

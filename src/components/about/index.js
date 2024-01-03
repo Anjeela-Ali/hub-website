@@ -141,7 +141,7 @@ const AboutSection = () => {
                             padding: '20px',
                             borderRight: { xs: 'none', sm: 'none', md: '1px solid #0000001a', lg: '1px solid #0000001a', xl: '1px solid #0000001a' },
                             borderBottom: { xs: '1px solid #0000001a', sm: '1px solid #0000001a', md: '1px solid #0000001a', lg: 'none', xl: 'none' },
-                            textAlign: 'left'
+                            textAlign: 'left',
                         }}>
                             <Typography variant='para' sx={{
                                 background: 'linear-gradient(180deg, #4452F2 0%, #F2DFDF 100%)',
